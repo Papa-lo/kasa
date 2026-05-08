@@ -1,8 +1,8 @@
 import logements from "../data/logements.json"
 import Card from "../components/Card"
 import Banner from "../components/Banner"
-import './Home.scss'
 import BanImage from "../assets/image-banner.webp"
+import './Home.scss'
 
 const Home = () => {
     return (

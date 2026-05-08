@@ -1,8 +1,8 @@
-import './App.scss'
 import { BrowserRouter } from 'react-router-dom'
+
 import Router from './Router'
 import Header from './components/Header'
-
+import './App.scss'
 
 function App() {
   return (
