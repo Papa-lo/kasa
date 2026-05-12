@@ -2,6 +2,7 @@ import { BrowserRouter } from 'react-router-dom'
 
 import Router from './Router'
 import Header from './components/Header'
+import Footer from './components/Footer'
 import './App.scss'
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
     <BrowserRouter>
       <header><Header /></header>
       <main><Router /></main>
-      <footer>Je suis le footer</footer>
+      <footer><Footer /></footer>
     </BrowserRouter>
   )
 }

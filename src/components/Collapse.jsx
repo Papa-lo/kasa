@@ -24,7 +24,7 @@ const Collapse = ({titre, contenu}) => {//Création composant menu deroulant.
                 <p>{titre}</p><img onClick={changerEtat} className={statut ? "fleche haut" : "fleche"} src={Arrow} alt="" />
             </button>
             <div className={statut ? "contenu ouvert" : "contenu"}>
-                <p>{contenu}</p>
+                <div>{contenu}</div>
             </div>
         </div>
     )

@@ -10,7 +10,7 @@ const Home = () => {
             <Banner bannertext="Chez vous, partout et ailleurs" bannerimage={BanImage} />
             <div className="cards-grid">
                 {logements.map((logement) => (
-                    <Card key={logement.id} cardtitle={logement.title} cardimage={logement.cover}/>
+                    <Card key={logement.id} cardid={logement.id} cardtitle={logement.title} cardimage={logement.cover}/>
                 ))}
             </div>
         </>

@@ -7,10 +7,12 @@
         align-items: center;
         background-color: rgba(255, 96, 96, 1);
         border-radius: 5px;
+        padding: 0 15px;
         border: none;
         p {
-            font-size: bold 24px;
+            font-size: 24px;
             font-weight: bold;
+            color: white;
         }
     }
 }
