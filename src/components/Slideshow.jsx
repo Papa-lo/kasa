@@ -34,6 +34,8 @@ const Slideshow = ({images, titre}) => {
                 <button className="arrow-right" onClick={imageSuivante}>
                     <img src={arrowRight} alt="Suivant" />
                 </button>
+
+                <span className="slide-counter">{indexImage+1}/{images.length}</span>
             </>
         )}
         </div> 

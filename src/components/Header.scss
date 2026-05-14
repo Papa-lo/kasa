@@ -3,6 +3,7 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+   padding:0 50px;
 
     img, nav {
         padding-top: 45px;
@@ -29,6 +30,8 @@ header {
 
 
 @media (max-width: 768px) {
+
+
     header nav a {
         text-transform: uppercase;
         font-size: 14px;

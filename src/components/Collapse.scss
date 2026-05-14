@@ -25,7 +25,12 @@
     border-radius: 5px;
 
     &.ouvert {
-        max-height: 200px; // Quand la classe "ouvert" est là, la hauteur passe à 200px
+        max-height: 500px; // Quand la classe "ouvert" est là, la hauteur passe à 200px
+        padding: 25px 15px;
+
+        ul {
+            list-style-type: none;
+        }
     }
 }
 

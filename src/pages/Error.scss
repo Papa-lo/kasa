@@ -25,3 +25,9 @@
 .button-error {
     // background-color: yellow;
 }
+
+@media (max-width: 768px) {
+    p {
+        text-align: center;
+    }
+}

@@ -14,7 +14,7 @@ body {
   color: $secondary-color;
   background-color: $bg-color;
   //*************
-  margin: 0 100px 0 100px;
+  // margin: 0 100px 0 100px;
 }
 
 #root {
@@ -24,6 +24,7 @@ body {
 }
 
 main {
+  margin: 0 100px 0 100px;
   flex: 1; // Prend tout l'espace restant, ce qui pousse le footer tout en bas
 }
 
