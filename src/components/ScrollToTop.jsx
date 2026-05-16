@@ -1,16 +1,25 @@
-import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useEffect } from "react";//Quand X change → fais ça
+import { useLocation } from "react-router-dom";//Où suis-je dans le site ?
 
+
+
+
+
+
+//****************************************************************************************************/
+
+//Création composant ScrollToTop.
 const ScrollToTop = () => {
-    // useLocation écoute en permanence l'URL (ex: /logement/c67ab43a)
-    const { pathname } = useLocation();
+    
+    const { pathname } = useLocation();//useLocation écoute en permanence l'URL (ex: /logement/c67ab43a)
 
-    useEffect(() => {
-        // Dès que l'URL change, on remonte tout en haut
-        window.scrollTo(0, 0);
-    }, [pathname]); // Le crochet [pathname] dit : "Réagis UNIQUEMENT si l'URL change"
+    useEffect(() => {//Si URL change
 
-    return null; // Ce composant n'affiche absolument rien à l'écran
+        window.scrollTo(0, 0);//On remonte tout en haut
+
+    }, [pathname]); //Le crochet [pathname] dit : "Réagis UNIQUEMENT si l'URL change"
+
+    return null; //Ce composant n'affiche rien à l'écran
 };
 
 export default ScrollToTop;

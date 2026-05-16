@@ -1,11 +1,17 @@
 import logements from "../data/logements.json"
 import Card from "../components/Card"
 import Banner from "../components/Banner"
-import BanImage from "../assets/image-banner.webp"
 import './Home.scss'
+import BanImage from "../assets/image-banner.webp"
 
+
+
+//****************************************************************************************************/
+
+//Création PAGE Home.
 const Home = () => {
     return (
+        
         <>
             <Banner bannertext="Chez vous, partout et ailleurs" bannerimage={BanImage} />
             <div className="cards-grid">

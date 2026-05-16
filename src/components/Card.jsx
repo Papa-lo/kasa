@@ -1,7 +1,16 @@
 import { Link } from "react-router-dom";
 import './Card.scss'
 
+
+
+
+
+
+//****************************************************************************************************/
+
+//Création composant Card.
 const Card = ({ cardtitle, cardimage, cardid }) => {
+    
     return (
         <Link className="cartes" to={`/logement/${cardid}`}>
             <img src={cardimage} alt={cardtitle}/>

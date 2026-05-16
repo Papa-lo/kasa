@@ -1,7 +1,16 @@
 import "./Footer.scss"
 import logoWhite from "../assets/logoWhite.png"
 
+
+
+
+
+
+//****************************************************************************************************/
+
+//Création composant Footer.
 const Footer = () => {
+    
     return (
         <footer>
             <img src={logoWhite} alt="Logo Kasa" />

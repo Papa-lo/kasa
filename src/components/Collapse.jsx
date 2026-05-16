@@ -1,15 +1,21 @@
-import { useState } from "react";//Importe depuis React une fonction
-//spéciale qui crée une mémoire(un tableau) qui contient un "statut"
-// et le surveille.
+import { useState } from "react";
+
 import './Collapse.scss'
 import Arrow from "../assets/arrow.png"
 
-const Collapse = ({titre, contenu}) => {//Création composant menu deroulant.
+
+
+
+//****************************************************************************************************/
+
+//Création composant Collapse.
+const Collapse = ({titre, contenu}) => {
     
     // Déconstruit le tableau renvoyé par useState :
     const [statut, changeStatut] = useState (false)
 
-    const changerEtat = () => {//Ce que fait le click
+    const changerEtat = () => {//Click
+
         if (statut === true) {
             changeStatut(false)
         } else {
@@ -19,13 +25,17 @@ const Collapse = ({titre, contenu}) => {//Création composant menu deroulant.
 
 
     return (
+
         <div className="collapse">
+
             <button>
                 <p>{titre}</p><img onClick={changerEtat} className={statut ? "fleche haut" : "fleche"} src={Arrow} alt="" />
             </button>
+
             <div className={statut ? "contenu ouvert" : "contenu"}>
                 <div>{contenu}</div>
             </div>
+            
         </div>
     )
 }

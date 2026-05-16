@@ -6,6 +6,9 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import './App.scss'
 
+//****************************************************************************************************/
+
+//Création App.
 function App() {
   return (
     <BrowserRouter>

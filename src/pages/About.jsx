@@ -1,9 +1,16 @@
 import Collapse from "../components/Collapse"
-import BanImage2 from "../assets/image-banner2.webp"
 import Banner from "../components/Banner"
 import "./About.scss"
+import BanImage2 from "../assets/image-banner2.webp"
 
+
+
+
+//****************************************************************************************************/
+
+//Création PAGE About.
 const About = () => {
+    
     return (
         <>
         <Banner bannertext={""} bannerimage={BanImage2}/>

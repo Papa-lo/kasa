@@ -1,12 +1,21 @@
 import { useState } from "react";
+
+import "./Slideshow.scss"
 import arrowLeft from "../assets/arrowLeft.png"
 import arrowRight from "../assets/arrowRight.png"
-import "./Slideshow.scss"
 
+
+
+//****************************************************************************************************/
+
+//Création composant Slideshow
 const Slideshow = ({images, titre}) => {
+
+    // Déconstruit le tableau renvoyé par useState :
     const [indexImage, changerIndex] = useState(0)
 
-    const imagePrecedente = () => {
+    const imagePrecedente = () => {//Click
+
         if (indexImage === 0) {
             changerIndex(images.length - 1)
         } else {
@@ -14,7 +23,8 @@ const Slideshow = ({images, titre}) => {
         }
     }
     
-    const imageSuivante = () => {
+    const imageSuivante = () => {//Click
+
         if (indexImage === images.length - 1) {
             changerIndex(0)
         } else {
@@ -23,6 +33,7 @@ const Slideshow = ({images, titre}) => {
     }
 
     return (
+        
         <div className="slideshow-container">
         <img src={images[indexImage]} alt={titre} />
         {images.length > 1 && (

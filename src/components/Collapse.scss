@@ -18,14 +18,14 @@
 }
 
 .contenu {
-    max-height: 0;       // Par défaut, la hauteur est de 0 (fermé)
-    overflow: hidden;    // Cache ce qui dépasse
-    transition: max-height 0.4s ease-out; // L'animation quand la hauteur change
+    max-height: 0;//Par défaut, hauteur 0 (fermé)
+    overflow: hidden;// Cache ce qui dépasse
+    transition: max-height 0.4s ease-out; //Animation quand hauteur change
     background-color:rgba(246, 246, 246, 0.45);
     border-radius: 5px;
 
     &.ouvert {
-        max-height: 500px; // Quand la classe "ouvert" est là, la hauteur passe à 200px
+        max-height: 500px; // Quand classe "ouvert", hauteur devient 200px
         padding: 25px 15px;
 
         ul {

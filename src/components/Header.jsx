@@ -1,8 +1,16 @@
 import { NavLink } from "react-router-dom";
-import logoKasa from "../assets/logoKasa.png"
 import "./Header.scss"
+import logoKasa from "../assets/logoKasa.png"
 
+
+
+
+
+//****************************************************************************************************/
+
+//Création composant Header.
 const Header = () => {
+    
     return (
         <header>
         <img src={logoKasa} alt="Logo Kasa" />

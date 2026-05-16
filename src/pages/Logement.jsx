@@ -4,16 +4,19 @@ import Slideshow from "../components/Slideshow"
 import Collapse from "../components/Collapse"
 import "./Logement.scss"
 
+
+
+//****************************************************************************************************/
+
+//Création PAGE Logement.
 const Logement = () => {
 
-    const { id } = useParams()
-    const logementTrouve = logements.find((logement) => logement.id === id)
-    //Crée la variable logementTrouve.
-    //Prends le tableau logements (fichier json)
-    //.find() : Cherche...
+    const { idLogement } = useParams()
+
+    const logementTrouve = logements.find((logement) => logement.id === idLogement)
+    //Crée variable logementTrouve. Prends tableau logements. .find() : Cherche dans tableau logements (fichier json)
     //Pour chaque élément du tableau, appelle-le temporairement logement.
-    //La condition : Si id de ce logement est strictement égal (===) à l'id récupéré dans l'URL par useParams.
-    //Si oui, stocke-le dans logementTrouve.
+    //Si id de ce logement strictement égal (===) à id récupéré dans l'URL par useParams. alors stocke-le dans logementTrouve.
 
     if (!logementTrouve) {
         return <Navigate to= "/404" replace/>
