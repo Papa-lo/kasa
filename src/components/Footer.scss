@@ -14,3 +14,11 @@ footer {
 
     
 }
+
+@media (max-width: 768px) {
+    footer p {
+        margin: auto;
+        margin-top: 20px;
+        width: 40%;
+    }
+}
